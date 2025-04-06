@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TapComponent } from './tap/tap.component';
 import { EapComponent } from './eap/eap.component';
 import { PmcComponent } from './pmc/pmc.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PmcComponent } from './pmc/pmc.component';
     TapComponent,
     EapComponent,
     PmcComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
