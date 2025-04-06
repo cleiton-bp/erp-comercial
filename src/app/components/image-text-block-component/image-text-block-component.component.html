@@ -15,7 +15,12 @@
   </div>
 
   <!-- Seção do texto -->
-  <div class="w-full md:w-1/2 px-4">
+  <div
+    class="w-full md:w-1/2 px-4"
+    [ngClass]="{
+      'md:pl-20': imagemPosicao === 'right'
+    }"
+  >
     <h2 class="text-4xl font-bold text-orange-600 mb-4 leading-tight">
       {{ titulo }}
     </h2>
