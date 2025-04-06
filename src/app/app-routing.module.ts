@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'eap', component: EapComponent },
   { path: 'pmc', component: PmcComponent },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
