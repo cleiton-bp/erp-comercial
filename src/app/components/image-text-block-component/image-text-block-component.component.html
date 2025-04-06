@@ -1,0 +1,29 @@
+<div
+  class="flex flex-col md:flex-row items-center justify-between gap-6 my-12"
+  [ngClass]="{
+    'md:flex-row': imagemPosicao === 'left',
+    'md:flex-row-reverse': imagemPosicao === 'right'
+  }"
+>
+  <!-- Seção da imagem -->
+  <div class="w-full md:w-1/2 flex justify-center">
+    <img
+      [src]="imagem"
+      [alt]="imagemAlt"
+      class="w-full max-w-[600px] rounded-xl shadow-lg object-contain"
+    />
+  </div>
+
+  <!-- Seção do texto -->
+  <div class="w-full md:w-1/2 px-4">
+    <h2 class="text-4xl font-bold text-orange-600 mb-4 leading-tight">
+      {{ titulo }}
+    </h2>
+    <p class="text-lg font-semibold text-gray-700 mb-2">
+      <span [innerHTML]="formatarMarkdown(subtitulo)"></span>
+    </p>
+    <p class="text-base text-gray-700 leading-relaxed whitespace-pre-line">
+      <span [innerHTML]="formatarMarkdown(descricao)"></span>
+    </p>
+  </div>
+</div>
