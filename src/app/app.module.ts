@@ -7,6 +7,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ImageTextBlockComponentComponent } from './components/image-text-block-component/image-text-block-component.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TapComponent } from './tap/tap.component';
+import { EapComponent } from './eap/eap.component';
+import { PmcComponent } from './pmc/pmc.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     ImageTextBlockComponentComponent,
     DashboardComponent,
+    TapComponent,
+    EapComponent,
+    PmcComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

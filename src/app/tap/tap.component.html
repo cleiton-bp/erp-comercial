@@ -1,0 +1,10 @@
+<ng-container *ngFor="let bloco of blocos">
+  <app-image-text-block-component
+    [imagem]="bloco.imagem"
+    [imagemAlt]="bloco.imagemAlt"
+    [titulo]="bloco.titulo"
+    [subtitulo]="bloco.subtitulo"
+    [descricao]="bloco.descricao"
+    [imagemPosicao]="bloco.imagemPosicao"
+  ></app-image-text-block-component>
+</ng-container>
