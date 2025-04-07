@@ -4,6 +4,11 @@
   overflow: hidden;
   background: white;
   position: relative;
+  cursor: grab;
+}
+
+.image-container:active {
+  cursor: grabbing;
 }
 
 .image-container img {

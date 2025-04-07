@@ -2,7 +2,10 @@
   class="image-container"
   #imageContainer
   (wheel)="onWheel($event)"
-  (mousemove)="onMouseMove($event)"
+  (mousedown)="onMouseDown($event)"
+  (mouseup)="onMouseUp($event)"
+  (mouseleave)="onMouseUp($event)"
+  (mousemove)="onDrag($event)"
 >
   <img
     #imageElement
@@ -16,8 +19,7 @@
         translateX +
         'px,' +
         translateY +
-        'px)',
-      'transform-origin': mouseX + 'px ' + mouseY + 'px'
+        'px)'
     }"
     alt="Visualizador"
   />
