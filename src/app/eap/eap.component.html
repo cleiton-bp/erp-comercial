@@ -1,1 +1,24 @@
-<p>eap works!</p>
+<div
+  class="image-container"
+  #imageContainer
+  (wheel)="onWheel($event)"
+  (mousemove)="onMouseMove($event)"
+>
+  <img
+    #imageElement
+    src="../../assets/erp-comercial/eap.jpg"
+    (load)="onImageLoad()"
+    [ngStyle]="{
+      transform:
+        'scale(' +
+        zoom +
+        ') translate(' +
+        translateX +
+        'px,' +
+        translateY +
+        'px)',
+      'transform-origin': mouseX + 'px ' + mouseY + 'px'
+    }"
+    alt="Visualizador"
+  />
+</div>
