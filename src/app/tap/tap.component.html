@@ -216,6 +216,21 @@
         </ul>
       </div>
 
+      <!-- Equipe Necessária -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Recursos Humanos Necessários
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Gerente de Projeto - Grazieli Hainzenreder Fernandes</li>
+          <li>Backend - Cleiton Becker Pereira</li>
+          <li>1 Desenvolvedor Frontend</li>
+          <li>1 Designer UI/UX</li>
+          <li>1 QA</li>
+          <li>1 Contador (Consultor)</li>
+        </ul>
+      </div>
+
       <!-- Milestones -->
       <div class="md:w-[48%]">
         <h3 class="text-2xl font-semibold text-orange-400 mb-2">
@@ -250,30 +265,21 @@
         </ul>
       </div>
 
-      <!-- Orçamento -->
-      <div class="md:w-[48%]">
-        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-          Orçamento Estimado
-        </h3>
-        <p>
-          R$90.000,00 – incluindo design, desenvolvimento, testes e consultoria
-          contábil.
-        </p>
-      </div>
-
-      <!-- Equipe Necessária -->
-      <div class="md:w-[48%]">
-        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-          Recursos Humanos Necessários
-        </h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Gerente de Projeto - Grazieli Hainzenreder Fernandes</li>
-          <li>Backend - Cleiton Becker Pereira</li>
-          <li>1 Desenvolvedor Frontend</li>
-          <li>1 Designer UI/UX</li>
-          <li>1 QA</li>
-          <li>1 Contador (Consultor)</li>
-        </ul>
+      <!-- Imagem ao lado do texto -->
+      <div class="md:w-[48%] flex items-stretch">
+        <div
+          class="w-full flex justify-center items-center bg-white rounded-xl overflow-hidden"
+          style="height: 100%"
+          (mousemove)="handleMouseMove($event)"
+          (mouseleave)="resetImagePosition()"
+        >
+          <img
+            #imagemElemento
+            [src]="'../../assets/erp-comercial/objetivos.png'"
+            [alt]="'imagem'"
+            class="w-[575px] mt-4 h-[300px] object-cover object-center rounded-xl transition-transform duration-200 ease-out"
+          />
+        </div>
       </div>
 
       <!-- Riscos -->
@@ -291,35 +297,60 @@
           </li>
         </ul>
       </div>
-    </div>
 
-    <!-- Critérios de Sucesso -->
-    <div class="md:w-[48%]">
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Critérios de Sucesso
-      </h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>
-          O sistema deve ser funcional e atender aos requisitos mínimos
-          definidos;
-        </li>
-        <li>Implementação bem-sucedida do sistema;</li>
-        <li>
-          A emissão de NFe e NFC-e deve estar operacional em ambiente de
-          homologação;
-        </li>
-        <li>
-          O sistema deve ser apresentado com protótipos funcionais (demo);
-        </li>
-        <li>
-          A documentação completa (requisitos, TAP, diagrama ER, protótipos,
-          etc.) deve ser entregue;
-        </li>
-        <li>
-          Receber feedback positivo de usuários, com uma avaliação média de 4
-          estrelas ou superior.
-        </li>
-      </ul>
+      <!-- Orçamento -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Orçamento Estimado
+        </h3>
+        <p>
+          R$90.000,00 – incluindo design, desenvolvimento, testes e consultoria
+          contábil.
+        </p>
+      </div>
+
+      <div class="md:w-[48%] flex items-stretch">
+        <div
+          class="w-full flex justify-center items-center bg-white rounded-xl overflow-hidden"
+          style="height: 100%"
+        >
+          <img
+            #imagemElemento
+            [src]="'../../assets/erp-comercial/erp.png'"
+            [alt]="'imagem'"
+            class="w-[575px] mt-2 h-[270px] object-cover object-center rounded-xl transition-transform duration-200 ease-out"
+          />
+        </div>
+      </div>
+
+      <!-- Critérios de Sucesso -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Critérios de Sucesso
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>
+            O sistema deve ser funcional e atender aos requisitos mínimos
+            definidos;
+          </li>
+          <li>Implementação bem-sucedida do sistema;</li>
+          <li>
+            A emissão de NFe e NFC-e deve estar operacional em ambiente de
+            homologação;
+          </li>
+          <li>
+            O sistema deve ser apresentado com protótipos funcionais (demo);
+          </li>
+          <li>
+            A documentação completa (requisitos, TAP, diagrama ER, protótipos,
+            etc.) deve ser entregue;
+          </li>
+          <li>
+            Receber feedback positivo de usuários, com uma avaliação média de 4
+            estrelas ou superior.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
