@@ -44,30 +44,6 @@
       imagemPosicao="left"
     ></app-image-text-block-component>
 
-    <!-- Funcionalidades Incluídas -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Funcionalidades Incluídas
-      </h3>
-      <h4 class="font-bold text-blue-950 mt-4">Módulo Gestão:</h4>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Emissão de NFe e NFC-e</li>
-        <li>
-          Cadastro e gestão de produtos, clientes, fornecedores e funcionários
-        </li>
-        <li>Controle de estoque e emissão de etiquetas</li>
-        <li>Gestão financeira: boletos, contas a pagar e a receber</li>
-        <li>Geração de relatórios gerenciais</li>
-      </ul>
-      <h4 class="font-bold text-blue-950 mt-4">Módulo Caixa (PDV):</h4>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Interface PDV com emissão e cancelamento de NFC-e</li>
-        <li>Abertura e fechamento de caixa</li>
-        <li>Integração com bancos e sistemas TEF (Sitef e VeroSmart)</li>
-        <li>Documentação e suporte técnico incluídos</li>
-      </ul>
-    </div>
-
     <!-- Objetivos -->
     <app-image-text-block-component
       imagem="../../assets/erp-comercial/objetivos.png"
@@ -78,73 +54,108 @@
       imagemPosicao="right"
     ></app-image-text-block-component>
 
-    <!-- Não Incluído -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">Não Incluído</h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Integração com CRM ou e-commerce</li>
-        <li>Suporte pós-entrega gratuito ao Domus</li>
-        <li>Licença mensal bonificada</li>
-        <li>Módulo de folha de pagamento</li>
-        <li>Aplicativo mobile</li>
-        <li>Suporte técnico ao TEF</li>
-      </ul>
+    <!-- Funcionalidades Incluídas -->
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Funcionalidades Incluídas
+        </h3>
+        <h4 class="font-bold text-blue-950 mt-4">Módulo Gestão:</h4>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Emissão de NFe e NFC-e</li>
+          <li>
+            Cadastro e gestão de produtos, clientes, fornecedores e funcionários
+          </li>
+          <li>Controle de estoque e emissão de etiquetas</li>
+          <li>Gestão financeira: boletos, contas a pagar e a receber</li>
+          <li>Geração de relatórios gerenciais</li>
+        </ul>
+      </div>
+
+      <div class="md:w-1/2">
+        <h4 class="font-bold text-blue-950 mt-4 md:mt-10">
+          Módulo Caixa (PDV):
+        </h4>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Interface PDV com emissão e cancelamento de NFC-e</li>
+          <li>Abertura e fechamento de caixa</li>
+          <li>Integração com bancos e sistemas TEF (Sitef e VeroSmart)</li>
+          <li>Documentação e suporte técnico incluídos</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Milestones -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Milestones do Projeto
-      </h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Início do Projeto: 05/05/2025</li>
-        <li>Levantamento de Requisitos: 31/05/2025</li>
-        <li>Design de Interface: 25/06/2025</li>
-        <li>Desenvolvimento Backend: 15/07/2025</li>
-        <li>Desenvolvimento Frontend: 10/08/2025</li>
-        <li>Testes e Ajustes: 31/08/2025</li>
-        <li>Entrega Final: 22/09/2025</li>
-      </ul>
-    </div>
+    <div class="flex flex-col md:flex-row md:flex-wrap gap-8">
+      <!-- Não Incluído -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Não Incluído
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Integração com CRM ou e-commerce</li>
+          <li>Suporte pós-entrega gratuito ao Domus</li>
+          <li>Licença mensal bonificada</li>
+          <li>Módulo de folha de pagamento</li>
+          <li>Aplicativo mobile</li>
+          <li>Suporte técnico ao TEF</li>
+        </ul>
+      </div>
 
-    <!-- Orçamento -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Orçamento Estimado
-      </h3>
-      <p>
-        R$90.000,00 – incluindo design, desenvolvimento, testes e consultoria
-        contábil.
-      </p>
-    </div>
+      <!-- Milestones -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Milestones do Projeto
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Início do Projeto: 05/05/2025</li>
+          <li>Levantamento de Requisitos: 31/05/2025</li>
+          <li>Design de Interface: 25/06/2025</li>
+          <li>Desenvolvimento Backend: 15/07/2025</li>
+          <li>Desenvolvimento Frontend: 10/08/2025</li>
+          <li>Testes e Ajustes: 31/08/2025</li>
+          <li>Entrega Final: 22/09/2025</li>
+        </ul>
+      </div>
 
-    <!-- Equipe Necessária -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Recursos Humanos Necessários
-      </h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Grazieli Hainzenreder Fernandes – Gerente de Projeto</li>
-        <li>Cleiton Becker Pereira – Backend</li>
-        <li>1 Desenvolvedor Frontend</li>
-        <li>1 Designer UI/UX</li>
-        <li>1 QA</li>
-        <li>1 Contador (Consultor)</li>
-      </ul>
-    </div>
+      <!-- Orçamento -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Orçamento Estimado
+        </h3>
+        <p>
+          R$90.000,00 – incluindo design, desenvolvimento, testes e consultoria
+          contábil.
+        </p>
+      </div>
 
-    <!-- Riscos -->
-    <div>
-      <h3 class="text-2xl font-semibold text-orange-400 mb-2">
-        Riscos Iniciais Identificados
-      </h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Falta de experiência com NFe</li>
-        <li>Alterações frequentes nos requisitos</li>
-        <li>Falta de tempo (equipe com estagiários)</li>
-        <li>Integrações com APIs externas</li>
-        <li>Desafios técnicos com geração de boletos</li>
-      </ul>
+      <!-- Equipe Necessária -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Recursos Humanos Necessários
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Grazieli Hainzenreder Fernandes – Gerente de Projeto</li>
+          <li>Cleiton Becker Pereira – Backend</li>
+          <li>1 Desenvolvedor Frontend</li>
+          <li>1 Designer UI/UX</li>
+          <li>1 QA</li>
+          <li>1 Contador (Consultor)</li>
+        </ul>
+      </div>
+
+      <!-- Riscos -->
+      <div class="md:w-[48%]">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Riscos Iniciais Identificados
+        </h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Falta de experiência com NFe</li>
+          <li>Alterações frequentes nos requisitos</li>
+          <li>Falta de tempo (equipe com estagiários)</li>
+          <li>Integrações com APIs externas</li>
+          <li>Desafios técnicos com geração de boletos</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Critérios de Sucesso -->
@@ -154,7 +165,7 @@
       titulo="Critérios de Sucesso"
       subtitulo="O que define o sucesso deste projeto"
       descricao="Para o sucesso do projeto, espera-se a funcionalidade completa do sistema, emissão de NFe e NFC-e em homologação, entrega de documentação e feedback positivo dos usuários com média superior a 4 estrelas."
-      imagemPosicao="left"
+      imagemPosicao="right"
     ></app-image-text-block-component>
   </div>
 </div>
