@@ -6,11 +6,16 @@
   }"
 >
   <!-- Seção da imagem -->
-  <div class="w-full md:w-1/2 flex justify-center">
+  <div
+    class="w-full md:w-1/2 flex justify-center"
+    (mousemove)="handleMouseMove($event)"
+    (mouseleave)="resetImagePosition()"
+  >
     <img
+      #imagemElemento
       [src]="imagem"
       [alt]="imagemAlt"
-      class="w-full max-w-[600px] -h-[300px] rounded-xl shadow-lg object-contain"
+      class="w-full max-w-96 rounded-xl object-contain transition-transform duration-200 ease-out"
     />
   </div>
 

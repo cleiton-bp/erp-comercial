@@ -55,19 +55,78 @@
       imagemAlt="Visão geral do sistema ERP"
       titulo="Descrição do Projeto"
       subtitulo="Desenvolvimento de um ERP Comercial Completo"
-      descricao="Este projeto visa desenvolver um sistema ERP (Programa de Automação Comercial) para a gestão eficiente de empresas, com módulos para emissão de NFe, NFC-e, cadastros diversos, controle de estoque, gestão financeira e relatórios."
+      descricao="Este projeto visa desenvolver um sistema ERP (Programa de Automação Comercial) para a gestão eficiente de empresas, com módulos para emissão de NFe (Nota Fiscal Eletrônica), emissão de NFC-e (Nota Fiscal de Consumidor Eletrônica), Gestão Completa da Empresa com Cadastros de Produtos, Clientes, Fornecedores, Funcionários, Controle de Estoque, Emissão de Boletos, Contas a Pagar, Contas a Receber e Diversos Relatórios de Gestão"
       imagemPosicao="left"
     ></app-image-text-block-component>
 
     <!-- Objetivos -->
-    <app-image-text-block-component
-      imagem="../../assets/erp-comercial/objetivos.png"
-      imagemAlt="Objetivos do ERP"
-      titulo="Objetivos do Projeto"
-      subtitulo="Eficiência, escalabilidade e integração com SEFAZ"
-      descricao="Entre os objetivos principais estão a emissão de NFe e NFC-e, gestão de estoque em tempo real, relatórios gerenciais, e uma interface intuitiva. O sistema também deve ser escalável para futuras integrações."
-      imagemPosicao="right"
-    ></app-image-text-block-component>
+    <div class="relative flex flex-col md:flex-row gap-8">
+      <!-- Coluna da esquerda -->
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold text-orange-400 mb-2">
+          Objetivos do Projeto
+        </h3>
+
+        <ul class="list-disc list-inside space-y-2 text-gray-800">
+          <li>
+            Desenvolver um módulo para emissão de
+            <strong>Notas Fiscais Eletrônicas (NFe)</strong>, conforme os
+            padrões da <strong>SEFAZ</strong>, garantindo validade jurídica e
+            integração com os órgãos fiscais.
+          </li>
+          <li>
+            Implementar um módulo de emissão de
+            <strong>Notas Fiscais de Consumidor Eletrônicas (NFC-e)</strong>,
+            otimizando o processo de venda no ponto de atendimento ao cliente.
+          </li>
+          <li>
+            Criar funcionalidades de
+            <strong
+              >cadastro e gerenciamento de produtos, clientes, fornecedores e
+              funcionários</strong
+            >, permitindo o controle centralizado das informações da empresa.
+          </li>
+          <li>
+            Desenvolver um sistema de
+            <strong>controle de estoque em tempo real</strong>, com
+            funcionalidades para entrada, saída, inventário e
+            <strong>alertas de baixo estoque</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Linha vertical cinza central -->
+      <div
+        class="hidden md:block absolute left-1/2 top-10 bottom-0 w-px bg-gray-300 z-0"
+      ></div>
+
+      <!-- Coluna da direita -->
+      <div class="md:w-1/2">
+        <h4 class="font-bold text-blue-950 mt-4 md:mt-10"></h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-800">
+          <li>
+            Integrar o sistema a um <strong>módulo financeiro</strong>,
+            incluindo emissão de <strong>boletos bancários</strong>, controle de
+            <strong>contas a pagar e contas a receber</strong>.
+          </li>
+          <li>
+            Gerar <strong>relatórios gerenciais dinâmicos</strong>, com dados de
+            vendas, estoque, financeiro, entre outros, auxiliando na
+            <strong>tomada de decisões estratégicas</strong> da empresa.
+          </li>
+          <li>
+            Garantir uma
+            <strong>interface intuitiva e de fácil usabilidade</strong>,
+            acessível tanto para usuários técnicos quanto administrativos.
+          </li>
+          <li>
+            Assegurar a <strong>escalabilidade do sistema</strong>, permitindo
+            futuras integrações com novos módulos, como
+            <strong>e-commerce</strong> ou <strong>CRM</strong>.
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Funcionalidades Incluídas -->
     <div class="flex flex-col md:flex-row gap-8">
