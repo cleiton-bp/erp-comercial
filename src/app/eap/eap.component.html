@@ -1,26 +1,146 @@
-<div
-  class="image-container"
-  #imageContainer
-  (wheel)="onWheel($event)"
-  (mousedown)="onMouseDown($event)"
-  (mouseup)="onMouseUp($event)"
-  (mouseleave)="onMouseUp($event)"
-  (mousemove)="onDrag($event)"
->
-  <img
-    #imageElement
-    src="../../assets/erp-comercial/eap.jpg"
-    (load)="onImageLoad()"
-    [ngStyle]="{
-      transform:
-        'scale(' +
-        zoom +
-        ') translate(' +
-        translateX +
-        'px,' +
-        translateY +
-        'px)'
-    }"
-    alt="Visualizador"
-  />
+<div class="p-4 font-sans">
+  <div
+    class="text-2xl font-bold text-black rounded px-6 py-3 mb-4 text-center w-full"
+  >
+    Domus EAP
+  </div>
+
+  <div class="flex flex-wrap xl:flex-nowrap gap-3 justify-start">
+    <!-- Coluna genérica (repita para cada grupo) -->
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-orange-500 text-xs"
+      >
+        Iniciação
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Elaboração TAP</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Definição Equipe</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Reunião Inicial Stakeholders
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Estudo Viabilidade e Tecnologias
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-blue-600 text-xs"
+      >
+        Planejamento
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Levantamento Requisitos
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Análise de Riscos</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Estimativa de Custos</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Definição Escopo e Entregáveis
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Planejamento de Qualidade e Comunicação
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-orange-500 text-xs"
+      >
+        Design (UX/UI)
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Criação Wireframes</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Prototipação das Telas
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Validação com Equipe e Usuários
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-blue-600 text-xs"
+      >
+        Backend
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Estruturação Banco de Dados
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Desenvolvimento das APIs
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Integração com Sefaz (NFe/NFCe)
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Integração com Bancos (boletos)
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">
+        Integração com TEF (Sitef e VeroSmart)
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-orange-500 text-xs"
+      >
+        Frontend
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Interface de Gestão</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">PDV (Caixa)</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Relatórios e Gráficos
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Login e Acesso</div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-blue-600 text-xs"
+      >
+        Testes
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Testes Unitários</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Funcionais</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Segurança</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Carga</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Usabilidade</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Ajustes</div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-orange-500 text-xs"
+      >
+        Documentação
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Manual do Usuário</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Instalação Técnica</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">
+        Requisitos, Diagramas
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-blue-600 text-xs"
+      >
+        Treinamento
+      </div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Usuários</div>
+      <div class="bg-blue-100 p-1.5 rounded shadow">Suporte Técnico</div>
+    </div>
+
+    <div class="flex flex-col gap-1 w-full sm:w-[160px] text-sm">
+      <div
+        class="text-white text-center font-semibold uppercase px-2 py-1 rounded bg-orange-500 text-xs"
+      >
+        Encerramento
+      </div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Entrega Final</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Apresentação</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Avaliação</div>
+      <div class="bg-yellow-200 p-1.5 rounded shadow">Encerramento Formal</div>
+    </div>
+  </div>
 </div>
