@@ -1,26 +1,151 @@
 <div
-  class="image-container"
-  #imageContainer
-  (wheel)="onWheel($event)"
-  (mousedown)="onMouseDown($event)"
-  (mouseup)="onMouseUp($event)"
-  (mouseleave)="onMouseUp($event)"
-  (mousemove)="onDrag($event)"
+  class="grid grid-cols-1 md:grid-cols-5 gap-2 p-4 bg-gray-100 text-sm leading-snug"
 >
-  <img
-    #imageElement
-    src="../../assets/erp-comercial/pmc.jpg"
-    (load)="onImageLoad()"
-    [ngStyle]="{
-      transform:
-        'scale(' +
-        zoom +
-        ') translate(' +
-        translateX +
-        'px,' +
-        translateY +
-        'px)'
-    }"
-    alt="Visualizador"
-  />
+  <!-- 1ª LINHA -->
+  <div class="bg-[#eaaeff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Justificativa</h2>
+    <p>
+      Desenvolvimento de sistema de gestão de uma biblioteca física e online
+      intuitivo e acessível para reserva de livros e espaços físicos da
+      biblioteca, bem como a integração com eBooks e Audiobooks, espaço para
+      avaliações e recomendações de livros e gestão de multas por atraso na
+      devolução de livros tornando os processos mais ágeis, autônomos e moderno.
+    </p>
+  </div>
+  <div class="bg-[#fff066] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Produto</h2>
+    <p>
+      Desenvolvimento de Sistema de Gestão de Biblioteca Online para web e
+      dispositivos Mobile.
+    </p>
+  </div>
+  <div class="bg-[#ff6b6b] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">
+      Stakeholders Externos
+      <span class="font-normal lowercase">Fatores externos</span>
+    </h2>
+    <ul class="list-disc list-inside">
+      <li>Patrocinador</li>
+      <li>Funcionários da Biblioteca</li>
+      <li>Usuários da Biblioteca</li>
+    </ul>
+  </div>
+  <div class="bg-[#8bf19b] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Premissas</h2>
+    <ul class="list-disc list-inside">
+      <li>
+        Os funcionários e usuários da biblioteca terão acesso a treinamento
+      </li>
+      <li>A infraestrutura tecnológica da biblioteca suporta o novo sistema</li>
+      <li>A legislação de proteção de dados será respeitada</li>
+    </ul>
+  </div>
+  <div class="bg-[#b9aaff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Riscos</h2>
+    <ul class="list-disc list-inside">
+      <li>
+        Resistência de usuários menos familiarizados com tecnologia no uso das
+        plataformas
+      </li>
+      <li>Desafios técnicos na integração com sistemas de pagamentos</li>
+      <li>
+        Possíveis atrasos devido a requisitos de conformidade e segurança de
+        dados
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2ª LINHA -->
+  <div class="bg-[#d699ff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">OBJ SMART</h2>
+    <p>
+      Automatizar a gestão da biblioteca física de forma digital para alcançar
+      um maior número de usuários tornando os processos mais ágeis, autônomos e
+      moderno.
+    </p>
+  </div>
+
+  <!-- Esta ocupa duas linhas -->
+  <div class="bg-[#fff066] p-3 border border-gray-300 row-span-2">
+    <h2 class="font-bold uppercase text-xs mb-1">Requisitos</h2>
+    <ul class="list-disc list-inside">
+      <li>
+        Design e desenvolvimento da plataforma online acessível via navegador e
+        aplicativo móvel
+      </li>
+      <li>
+        Integração com sistemas de gerenciamento interno da biblioteca para
+        atualizações em tempo real de disponibilidade de livros
+      </li>
+      <li>
+        Implementação de um sistema de notificações via e-mail e SMS para
+        lembretes de prazos para devoluções e disponibilidade de livros
+        reservados previamente
+      </li>
+      <li>
+        Criação de uma base de dados segura para a gestão administrativa da
+        biblioteca
+      </li>
+    </ul>
+  </div>
+  <div class="bg-[#ff6b6b] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Equipe</h2>
+    <ul class="list-disc list-inside">
+      <li>2 Devs BackEnd</li>
+      <li>1 Dev Frontend</li>
+      <li>2 Devs Mobile</li>
+      <li>1 Gerente de Projeto</li>
+    </ul>
+  </div>
+  <div class="bg-[#8bf19b] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Grupo de Entregas</h2>
+    <ul class="list-disc list-inside">
+      <li>Conclusão do Design</li>
+      <li>Desenvolvimento completo</li>
+      <li>Testes e ajustes</li>
+      <li>Lançamento oficial</li>
+    </ul>
+  </div>
+  <div class="bg-[#b9aaff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Linha do Tempo</h2>
+    <p>
+      Design: 30/05/2025<br />
+      Desenvolvimento: 30/11/2025<br />
+      Testes: 15/01/2026<br />
+      Lançamento: 30/01/2026 <br /><br />
+      <strong>Início:</strong> 10/04/2025<br />
+      <strong>Fim:</strong> 01/03/2026<br />
+    </p>
+  </div>
+
+  <!-- 3ª LINHA -->
+  <div class="bg-[#d699ff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Benefícios</h2>
+    <ul class="list-disc list-inside">
+      <li>Facilitar os procedimentos de empréstimo e devolução de livros</li>
+      <li>Expandir o atendimento para usuários online</li>
+      <li>Controlar as reservas de espaços de estudo (salas da biblioteca)</li>
+      <li>Administrar pagamentos de multas e compras de livros online</li>
+      <li>Disponibilizar espaço de avaliações dos livros</li>
+      <li>Tornar o atendimento mais ágil e autônomo</li>
+    </ul>
+  </div>
+  <!-- Removido para alinhar corretamente -->
+  <div class="bg-[#8bf19b] p-3 border border-gray-300 col-span-2">
+    <h2 class="font-bold uppercase text-xs mb-1">Restrições</h2>
+    <ul class="list-disc list-inside">
+      <li>Desenvolvimento de sistema de pagamento online</li>
+      <li>Expandir o atendimento para usuários online</li>
+      <li>Marketing e lançamento das plataformas e sistema desenvolvido</li>
+    </ul>
+  </div>
+  <div class="bg-[#b9aaff] p-3 border border-gray-300">
+    <h2 class="font-bold uppercase text-xs mb-1">Custos</h2>
+    <p>Orçamento estimado: $100.000,00<br /></p>
+    <ul class="list-disc list-inside">
+      <li>Inclui design</li>
+      <li>desenvolvimento</li>
+      <li>testes</li>
+    </ul>
+  </div>
 </div>
